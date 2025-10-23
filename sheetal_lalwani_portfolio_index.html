@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sheetal Lalwani — Portfolio</title>
+  <style>
+    :root{--accent:#0f62fe;--bg:#f7f9fc;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#0f1724}
+    .wrap{max-width:1000px;margin:28px auto;padding:20px}
+    header{text-align:center;padding:28px 12px}
+    h1{margin:8px 0;font-size:2rem}
+    p.lead{margin:6px 0;color:var(--muted)}
+    .buttons{margin-top:12px}
+    .btn{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff;font-weight:600;margin:6px}
+    .icons{margin-top:12px}
+    .icons a{margin:0 8px;text-decoration:none;color:var(--accent);font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 6px 18px rgba(15,22,36,0.06);border:1px solid rgba(15,22,36,0.04)}
+    .proj-img{height:150px;border-radius:8px;background:#e6eefc;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    .proj-title{margin:10px 0;font-weight:700}
+    .proj-desc{font-size:0.95rem;color:var(--muted)}
+    .proj-link{margin-top:10px;display:inline-block;color:var(--accent);text-decoration:none;font-weight:600}
+    .cert-thumb{height:100px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px dashed #d1d5db}
+    footer{text-align:center;margin:28px 0;color:var(--muted)}
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px}
+    .modal.open{display:flex}
+    .modal-card{max-width:820px;width:100%;background:#fff;padding:18px;border-radius:12px;box-shadow:0 12px 40px rgba(2,6,23,0.3);}
+    .modal-head{display:flex;justify-content:space-between;align-items:center}
+    .close{background:#111827;color:#fff;border:none;padding:6px 10px;border-radius:8px}
+    .modal-body{margin-top:12px}
+    @media (max-width:520px){h1{font-size:1.5rem}.proj-img{height:120px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 id="fullname">Sheetal Lalwani</h1>
+      <div id="titleLine" class="lead">Aspiring Data Analyst • SQL • Power BI • Python • Excel</div>
+      <div class="buttons">
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#certs" class="btn" style="background:#10b981">Certificates</a>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/Sheetallalwani" target="_blank" title="GitHub">GitHub</a> •
+        <a href="https://www.linkedin.com/in/sheetal-lalwani/" target="_blank" title="LinkedIn">LinkedIn</a> •
+        <a href="mailto:sheetallalwani212@gmail.com" title="Email">Gmail</a>
+      </div>
+    </header>
+
+    <section class="card" style="padding:18px;margin-top:8px">
+      <h2>About Me</h2>
+      <p id="aboutText" class="proj-desc">
+        BCA graduate and current M.Sc. Data Science student at VIT (DL) with strong skills in Python, MySQL, BigQuery, Power BI, Excel, Pandas, and NumPy. Certified in Google Data Analytics and HackerRank SQL (Basic & Intermediate). Experienced in data analysis, dashboard creation, and statistical modelling through academic and personal projects. Open to Data Analyst, Data Scientist, and Business Analyst roles across India.
+      </p>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="proj-img">Walmart Dashboard</div>
+          <div class="proj-title">Walmart Sales Analysis</div>
+          <div class="proj-desc">Designed a Kaggle-to-MySQL data pipeline to clean and process 10K+ Walmart transactions. Analysed revenue trends, customer behaviour, and branch performance using SQL — improving data reliability and reporting efficiency.</div>
+          <a href="https://github.com/Sheetallalwani/Walmart_Sales_Analysis" target="_blank" class="proj-link">View on GitHub</a>
+        </div>
+        <div class="card">
+          <div class="proj-img">Retail Sales Analysis</div>
+          <div class="proj-title">Retail Sales Analysis</div>
+          <div class="proj-desc">Analysed 1,000+ retail sales records to uncover trends in customer behaviour and sales peaks. Delivered actionable insights using MySQL for database creation, EDA, and report generation.</div>
+          <a href="https://github.com/Sheetallalwani/MySQL_Retail_Sales_p1" target="_blank" class="proj-link">View on GitHub</a>
+        </div>
+        <div class="card">
+          <div class="proj-img">Healthcare Dashboard</div>
+          <div class="proj-title">Healthcare Analytics Dashboard</div>
+          <div class="proj-desc">Built an interactive Power BI dashboard to analyse healthcare waitlists and case types. Reduced manual analysis time by 50% through automated Power Query transformations and DAX KPIs.</div>
+          <a href="https://github.com/Sheetallalwani/Healthcare-analytics-dashboard" target="_blank" class="proj-link">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certs" style="margin-top:18px">
+      <h2>Certificates</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="cert-thumb">Google Data Analytics Certificate</div>
+          <a href="https://coursera.org/share/8d5b215b504a0ccd80edbb190a708c0e" target="_blank" class="proj-link">View Certificate</a>
+        </div>
+        <div class="card">
+          <div class="cert-thumb">HackerRank SQL (Basic & Intermediate)</div>
+          <a href="https://www.hackerrank.com/certificates/68a218f9aa08" target="_blank" class="proj-link">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Sheetal Lalwani | Built with HTML & CSS</p>
+    </footer>
+  </div>
+</body>
+</html>
