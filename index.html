@@ -22,14 +22,8 @@
     .proj-title{margin:10px 0;font-weight:700}
     .proj-desc{font-size:0.95rem;color:var(--muted)}
     .proj-link{margin-top:10px;display:inline-block;color:var(--accent);text-decoration:none;font-weight:600}
-    .cert-thumb{height:100px;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px dashed #d1d5db}
+    .cert-thumb img{width:100%;border-radius:8px}
     footer{text-align:center;margin:28px 0;color:var(--muted)}
-    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px}
-    .modal.open{display:flex}
-    .modal-card{max-width:820px;width:100%;background:#fff;padding:18px;border-radius:12px;box-shadow:0 12px 40px rgba(2,6,23,0.3);}
-    .modal-head{display:flex;justify-content:space-between;align-items:center}
-    .close{background:#111827;color:#fff;border:none;padding:6px 10px;border-radius:8px}
-    .modal-body{margin-top:12px}
     @media (max-width:520px){h1{font-size:1.5rem}.proj-img{height:120px}}
   </style>
 </head>
@@ -84,12 +78,18 @@
       <h2>Certificates</h2>
       <div class="grid">
         <div class="card">
-          <div class="cert-thumb">Google Data Analytics Certificate</div>
-          <a href="https://coursera.org/share/8d5b215b504a0ccd80edbb190a708c0e" target="_blank" class="proj-link">View Certificate</a>
+          <div class="cert-thumb">
+            <a href="https://coursera.org/share/8d5b215b504a0ccd80edbb190a708c0e" target="_blank">
+              <img src="google_certificate.jpeg" alt="Google Data Analytics Certificate">
+            </a>
+          </div>
         </div>
         <div class="card">
-          <div class="cert-thumb">HackerRank SQL (Basic & Intermediate)</div>
-          <a href="https://www.hackerrank.com/certificates/68a218f9aa08" target="_blank" class="proj-link">View Certificate</a>
+          <div class="cert-thumb">
+            <a href="https://www.hackerrank.com/certificates/68a218f9aa08" target="_blank">
+              <img src="hackerrank_certificate.png" alt="HackerRank SQL Certificate">
+            </a>
+          </div>
         </div>
       </div>
     </section>
